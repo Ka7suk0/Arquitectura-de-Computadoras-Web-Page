@@ -463,3 +463,39 @@ header nav ul li a:hover {
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+/* Unidades/Galeria */
+.practica5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.practica5item, .practica5item-card {
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practica5item img, .practica5item-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.practica5item h3, .practica5item-card h3 {
+    margin-bottom: 15px;
+    color: var(--color-primario);
+}
+
+.practica5item p, .practica5item-card p {
+    margin-bottom: 20px;
+}
